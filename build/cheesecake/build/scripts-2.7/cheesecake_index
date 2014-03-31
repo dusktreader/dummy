@@ -1,0 +1,5 @@
+#!C:\Users\NHL17_000\AppData\Local\Enthought\Canopy\User\Scripts\python.exe
+
+from cheesecake.cheesecake_index import main
+
+main()
