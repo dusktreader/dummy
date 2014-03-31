@@ -1,5 +1,5 @@
 .. dummy documentation master file, created by
-   sphinx-quickstart on Mon Mar 31 13:01:26 2014.
+   sphinx-quickstart on Mon Mar 31 16:51:25 2014.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 

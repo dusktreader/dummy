@@ -20,7 +20,7 @@ def read(*filenames, **kwargs):
             buf.append(f.read())
     return sep.join(buf)
 
-long_description = read('README.txt',)
+long_description = read('README.txt','requirements.txt',)
 
 class PyTest(TestCommand):
     def finalize_options(self):
@@ -52,10 +52,7 @@ setup(
     test_suite='dummy.test.test_dummy',
     classifiers = [
         'Programming Language :: Python',
-        'Development Status :: 0',
         'Natural Language :: English',
-        'Intended Audience :: Co-workers',
-        'License :: OSI Approved :: Cornell University',
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules',
         ],
