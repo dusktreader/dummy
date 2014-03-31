@@ -18,17 +18,12 @@ ReadTheDocs: https://readthedocs.org/projects/dummy/
 Quickstart:
 -----------
 
-+ At the root document, run ``python setup.py install``
-+ Test the module with ``python setup.py test``
-+ Calling module::
-  
-    import dummy
-    n1 = 3
-    n2 = 1
-    result1 = dummy.add(n1,n2)
-    >>>4
-    result2 = dummy.sub(n1,n2)
-    >>>2
++ At the root document, run ``python setup.py install``.
++ Test the module with ``python setup.py test``.
++ Calling module:
+  - ``import dummy``
+  - ``result1 = dummy.add(n1,n2)``
+  - ``result2 = dummy.sub(n1,n2)``
 
 
 Dependencies:
