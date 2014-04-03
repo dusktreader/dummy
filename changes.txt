@@ -1,0 +1,6 @@
+version 0.0.2
+-------------
+
++ remove requirement ``numpy>=1.0.0``
++ include requirement ``jinja2>=2.0.0`` for documentation
++ include the ``changes.txt`` file
