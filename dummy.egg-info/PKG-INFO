@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: dummy
-Version: 0.0.1
+Version: 0.0.2
 Summary: Dummy package adding or subtracting two numbers - to try releasing a Python package
 Home-page: http://github.com/hn269/dummy/
 Author: Hoang Long Nguyen
@@ -19,7 +19,7 @@ Description: The Python Documentation and Release Project
         
         This package is literally a dummy package. All it does is adding or subtracting two given numbers and give out a result.
         
-        
+        jinja2==2.7.2
 Platform: any
 Classifier: Programming Language :: Python
 Classifier: Natural Language :: English
