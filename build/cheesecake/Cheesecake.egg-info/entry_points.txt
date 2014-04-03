@@ -1,3 +1,0 @@
-[console_scripts]
-cheesecake_index = cheesecake.cheesecake_index:main
-
