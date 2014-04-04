@@ -21,14 +21,14 @@ Quickstart:
 + At the root document, run ``python setup.py install``.
 + Test the module with ``python setup.py test``.
 + Calling module:
-  - ``import dummy``
-  - ``result1 = dummy.add(n1,n2)``
-  - ``result2 = dummy.sub(n1,n2)``
+  - ``from dummy import calc``
+  - ``result1 = calc(n1,'+',n2)``
+  - ``result2 = calc(n1,'-',n2)``
 
 
 Dependencies:
 -------------
 
-None.
+jinja2 2.7.2 for documentation
 Recommended numpy.
 

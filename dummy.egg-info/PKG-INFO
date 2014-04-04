@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: dummy
-Version: 0.0.2
+Version: 0.0.3
 Summary: Dummy package adding or subtracting two numbers - to try releasing a Python package
 Home-page: http://github.com/hn269/dummy/
 Author: Hoang Long Nguyen

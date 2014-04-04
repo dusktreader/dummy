@@ -46,7 +46,7 @@ setup(
     author_email='hn269@cornell.com',
     description='Dummy package adding or subtracting two numbers - to try releasing a Python package',
     long_description=long_description,
-    packages=['dummy'],
+    packages=['dummy','docs'],
     include_package_data=True,
     platforms='any',
     test_suite='dummy.test.test_dummy',

@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# \Dropbox\Reasearch_Nguyen\Dummy\tests
+# \Dropbox\Reasearch_Nguyen\Dummy\dummy\
 # Hoang Long Nguyen (hn269@cornell.edu)
 # 2014/03/28
 #
@@ -25,12 +25,16 @@ two given numbers and give out a result.
 
 """
 
-def add(n1,n2):
+def calc(n1,op,n2):
     result = 0
-    result = n1+n2
-    return result
-
-def sub(n1,n2):
-    result = 0
-    result = n1-n2
-    return result
+    if op=='+':
+        from add import add
+        result = add(n1,n2)
+        return result
+    else:
+        if op=='-':
+            from sub import sub
+            result = sub(n1,n2)
+            return result
+        else:
+            print 'dummy does not support this operation'

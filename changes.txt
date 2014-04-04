@@ -1,3 +1,11 @@
+version 0.0.3
+-------------
+
++ change ``add`` and ``sub`` into sub-module ``add.py`` and ``sub.py``
++ modify the main ``dummy.py`` accordingly
++ modify the ``test_dummy.py`` accordingly
++ include the *docs* folder into the package
+
 version 0.0.2
 -------------
 
