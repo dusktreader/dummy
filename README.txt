@@ -1,6 +1,6 @@
-=============
-Dummy Project
-=============
+==========================================
+Python Documentation and Releasing Project
+==========================================
 
 Project Description:
 --------------------
