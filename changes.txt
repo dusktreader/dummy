@@ -1,3 +1,8 @@
+version 0.0.4
+-------------
+
++ include file ``requirements.txt`` and ``changes.txt`` into the package
+
 version 0.0.3
 -------------
 
