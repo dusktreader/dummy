@@ -1,3 +1,8 @@
+version 0.0.5
+-------------
+
++ update README.txt with proper instruction
+
 version 0.0.4
 -------------
 

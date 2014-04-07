@@ -47,6 +47,7 @@ setup(
     description='Dummy package adding, subtracting or multiplying two numbers - to try releasing a Python package',
     long_description=long_description,
     packages=['dummy',],
+    data_files=[('',['requirements.txt','changes.txt'])],
     include_package_data=True,
     platforms='any',
     test_suite='dummy.test.test_dummy',
