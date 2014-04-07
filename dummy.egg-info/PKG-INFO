@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: dummy
-Version: 0.0.5
+Version: 0.1.0
 Summary: Dummy package adding, subtracting or multiplying two numbers - to try releasing a Python package
 Home-page: http://github.com/hn269/dummy/
 Author: Hoang Long Nguyen
@@ -41,17 +41,48 @@ Description: ==========================================
         + Calling module:
         	- ``import dummy``
         	- ``result1 = dummy.calc(n1,op,n2)``
-        	- ``result2 = dummy.calc(n1,op,n2)``
-        	with n1,n2 are numbers, op are operation in string '+','-','*','.' and 'x'
+        	- ``result2 = dummy.calc(n1,op,n2)`` with n1,n2 are numbers, op are operation in string '+','-','*','.' and 'x'
+        	- ``result3 = dummy.circ(r)`` with r the radius of a circle.
         
         Dependencies:
         -------------
         
         jinja 2.7.2 for documentation.
-        Recommended numpy.
+        numpy 1.0.0
         
         
+        numpy==1.0.0
         jinja2==2.7.2
+        version 0.1.0
+        -------------
+        
+        + add a function caluclating a circle's area, using numpy requirements.
+        + update requirements.txt and setup.py, README.txt
+        
+        version 0.0.5
+        -------------
+        
+        + update README.txt with proper instruction
+        
+        version 0.0.4
+        -------------
+        
+        + include file ``requirements.txt`` and ``changes.txt`` into the package
+        
+        version 0.0.3
+        -------------
+        
+        + change ``add`` and ``sub`` into sub-module ``add.py`` and ``sub.py``
+        + modify the main ``dummy.py`` accordingly
+        + modify the ``test_dummy.py`` accordingly
+        + include the *docs* folder into the package
+        
+        version 0.0.2
+        -------------
+        
+        + remove requirement ``numpy>=1.0.0``
+        + include requirement ``jinja2>=2.0.0`` for documentation
+        + include the ``changes.txt`` file
 Platform: any
 Classifier: Programming Language :: Python
 Classifier: Natural Language :: English
