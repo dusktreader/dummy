@@ -35,6 +35,7 @@ Quickstart:
 	- ``result1 = dummy.calc(n1,op,n2)``
 	- ``result2 = dummy.calc(n1,op,n2)``
 	with n1,n2 are numbers, op are operation in string '+','-','*','.' and 'x'
+	- ``result3 = dummy.circ(r)`` with r the radius of a circle.
 
 Dependencies:
 -------------
