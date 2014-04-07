@@ -11,14 +11,14 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import sys, os
+import pkg_resources
 import mock
 
 MOCK_MODULES = ['numpy', 'scipy', 'matplotlib', 'matplotlib.pyplot', 'scipy.interpolate']
 for mod_name in MOCK_MODULES:
         sys.modules[mod_name] = mock.Mock()
 
-import sys, os
-import pkg_resources
 try:
         release = pkg_resources.get_distribution('dummy').version
 except pkg_resources.DistributionNotFound:
