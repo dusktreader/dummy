@@ -57,5 +57,5 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules',
         ],
-    zip_safe = True
+
 )
