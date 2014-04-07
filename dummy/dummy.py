@@ -37,4 +37,9 @@ def calc(n1,op,n2):
             result = sub(n1,n2)
             return result
         else:
-            print 'dummy does not support this operation'
+            if op in ['*','x','.']:
+                from mul import mul
+                result = mul(n1,n2)
+                return result
+            else:
+                print 'dummy does not support this operation'

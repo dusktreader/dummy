@@ -19,3 +19,7 @@ def test_sub():
     n1 = calc(3,'-',5)
     assert n1 == -2
     
+def test_mul():
+    n1 = calc(3,'x',7)
+    assert n1 == 21
+    
