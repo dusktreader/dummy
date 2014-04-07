@@ -11,6 +11,12 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
+import mock
+
+MOCK_MODULES = ['numpy', 'scipy', 'matplotlib', 'matplotlib.pyplot', 'scipy.interpolate']
+for mod_name in MOCK_MODULES:
+        sys.modules[mod_name] = mock.Mock()
+
 import sys, os
 import pkg_resources
 try:
@@ -101,9 +107,15 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ---------------------------------------------------
 
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if on_rtd:
+        html_theme = 'default'
+else:
+        html_theme = 'nature'
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'haiku'
+#html_theme = 'haiku'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

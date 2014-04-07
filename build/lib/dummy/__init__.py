@@ -1,5 +1,5 @@
 from . import dummy
 
-from dummy import calc
+from dummy import calc, circ
 
-__version__ = '0.0.5'
+__version__ = '0.1.0'

@@ -43,3 +43,11 @@ def calc(n1,op,n2):
                 return result
             else:
                 print 'dummy does not support this operation'
+
+def circ(r):
+    result = 0
+    import numpy as np
+    if r>=0: 
+        result = np.pi*r**2
+    else:
+        print 'radius must be non-negative'

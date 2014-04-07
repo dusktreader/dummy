@@ -20,7 +20,7 @@ def read(*filenames, **kwargs):
             buf.append(f.read())
     return sep.join(buf)
 
-long_description = read('README.txt','requirements.txt',)
+long_description = read('README.txt','requirements.txt','changes.txt',)
 
 class PyTest(TestCommand):
     def finalize_options(self):
@@ -41,7 +41,7 @@ setup(
     license='Cornell University',
     author='Hoang Long Nguyen',
     tests_require=['pytest',],
-    install_requires=['jinja2>=2.0.0',],
+    install_requires=['jinja2>=2.0.0','numpy>=1.0.0'],
     cmdclass={'test': PyTest,},
     author_email='hn269@cornell.com',
     description='Dummy package adding, subtracting or multiplying two numbers - to try releasing a Python package',
