@@ -41,7 +41,7 @@ setup(
     license='Cornell University',
     author='Hoang Long Nguyen',
     tests_require=['pytest',],
-    install_requires=['jinja2>=2.0.0','numpy>=1.0.0'],
+    install_requires=['jinja2>=2.0.0','numpy>=1.0.0',],
     cmdclass={'test': PyTest,},
     author_email='hn269@cornell.com',
     description='Dummy package adding, subtracting or multiplying two numbers - to try releasing a Python package',
@@ -57,7 +57,5 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules',
         ],
-    extras_require={
-        'testing': ['pytest'],
-    }
+    
 )
