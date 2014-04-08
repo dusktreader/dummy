@@ -54,7 +54,8 @@ Description: ==========================================
         
         jinja2==2.7.2,
         pytest==2.5.2,
-        setuptools==3.4.3
+        setuptools==3.4.3,
+        mock==1.0.1
         version 0.1.0
         -------------
         
