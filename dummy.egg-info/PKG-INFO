@@ -61,6 +61,7 @@ Description: ==========================================
         
         + add a function caluclating a circle's area, using numpy requirements.
         + update requirements.txt and setup.py, README.txt
+        + now require: numpy (for new function), setuptools (for setup), jinja2 and mock (for documentation on ReadTheDocs)
         
         version 0.0.5
         -------------
