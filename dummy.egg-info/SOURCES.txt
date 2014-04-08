@@ -17,5 +17,4 @@ dummy.egg-info/SOURCES.txt
 dummy.egg-info/dependency_links.txt
 dummy.egg-info/requires.txt
 dummy.egg-info/top_level.txt
-dummy.egg-info/zip-safe
 tests/test_dummy.py
