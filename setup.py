@@ -60,5 +60,5 @@ setup(
     extras_require={
         'testing': ['pytest'],
     },
-    #zip_safe = True,
+    zip_safe = True,
 )
