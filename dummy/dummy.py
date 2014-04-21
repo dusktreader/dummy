@@ -9,6 +9,12 @@
 The Python Documentation and Release Project
 ============================================
 
+.. image:: icons\Dummy_icon.png
+    :height: 100px
+    :alt: logo
+    :align: center
+    
+
 Introduction
 ------------
 
@@ -22,6 +28,8 @@ The dummy package
 
 This package is literally a dummy package. All it does is adding or subtracting 
 two given numbers and give out a result.
+
+    
 
 """
 
@@ -59,5 +67,8 @@ def circ(r):
     import numpy as np
     if r>=0: 
         result = np.pi*r**2
+        return result
     else:
         print 'radius must be non-negative'
+        
+print 'Welcome to dummy package'

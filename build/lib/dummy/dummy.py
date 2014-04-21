@@ -26,6 +26,12 @@ two given numbers and give out a result.
 """
 
 def calc(n1,op,n2):
+    """ 
+    The function ``calc`` would do a calculation for the two numbers n1, n2 
+    under the operation 'op'.
+    n1, n2 are of numeric values, op is a string represent the operation between 
+    n1 and n2.
+    """
     result = 0
     if op=='+':
         from add import add
@@ -45,9 +51,16 @@ def calc(n1,op,n2):
                 print 'dummy does not support this operation'
 
 def circ(r):
+    """
+    The function ``circ`` calculate the area of a circle with radius r.
+    r is of numeric value.
+    """
     result = 0
     import numpy as np
     if r>=0: 
         result = np.pi*r**2
+        return result
     else:
         print 'radius must be non-negative'
+        
+print 'Welcome to dummy package'
