@@ -17,4 +17,5 @@ dummy.egg-info/SOURCES.txt
 dummy.egg-info/dependency_links.txt
 dummy.egg-info/requires.txt
 dummy.egg-info/top_level.txt
+icons/Dummy_icon.ico
 tests/test_dummy.py

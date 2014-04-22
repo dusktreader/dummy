@@ -6,7 +6,7 @@ from setuptools.command.test import test as TestCommand
 import io
 import os
 import sys
-
+import py2exe
 import dummy
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -47,7 +47,7 @@ setup(
     description='Dummy package adding, subtracting or multiplying two numbers - to try releasing a Python package',
     long_description=long_description,
     packages=['dummy',],
-    data_files=[('',['requirements.txt','changes.txt'])],
+    data_files=[('',['requirements.txt','changes.txt']),('icons',['icons\Dummy_icon.ico']),],
     include_package_data=True,
     platforms='any',
     test_suite='dummy.test.test_dummy',
@@ -60,5 +60,6 @@ setup(
     extras_require={
         'testing': ['pytest'],
     },
+    console=[{'script':'dummy\dummy.py','icon_resources':[(1,'icons\Dummy_icon3.ico')],}]
     #zip_safe = True,
 )
