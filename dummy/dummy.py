@@ -9,7 +9,7 @@
 The Python Documentation and Release Project
 ============================================
 
-.. image:: icons/Dummy_icon.png
+.. image:: https://raw.githubusercontent.com/hn269/dummy/develop/icons/Dummy_icon.png
     :height: 100px
     :alt: logo
     :align: center
