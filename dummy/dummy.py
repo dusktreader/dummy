@@ -13,6 +13,7 @@ The Python Documentation and Release Project
     :height: 100px
     :alt: logo
     :align: center
+    :target: https://github.com/hn269/dummy/tree/develop/icons/Dummy_icon.png
     
 
 Introduction
