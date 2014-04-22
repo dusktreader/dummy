@@ -9,11 +9,11 @@
 The Python Documentation and Release Project
 ============================================
 
-.. image:: icons/Dummy_icon.png
+.. image:: \icons\Dummy_icon.png
     :height: 100px
     :alt: logo
     :align: center
-    :target: icons/Dummy_icon.png
+    :target: \icons\Dummy_icon.png
     
 
 Introduction
