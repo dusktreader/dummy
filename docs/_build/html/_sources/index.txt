@@ -6,7 +6,16 @@
 Welcome to dummy's documentation!
 =================================
 
+.. image:: Dummy_icon.png
+	:height: 100px
+	:alt: logo
+	:align: center
+
+.. include:: README.txt
+
+
 Contents:
+---------
 
 .. toctree::
    :maxdepth: 4

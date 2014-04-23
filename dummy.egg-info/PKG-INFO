@@ -32,6 +32,7 @@ Description: ==========================================
         ------
         
         ReadTheDocs: https://readthedocs.org/projects/dummy/
+        GitHub: https://github.com/hn269/dummy/
         
         Quickstart:
         -----------
@@ -54,26 +55,30 @@ Description: ==========================================
         jinja2==2.7.2,
         pytest==2.5.2,
         setuptools==3.4.3,
-        mock==1.0.1
+        mock==1.0.1,
+        py2exe==0.6.9
+        Changes
+        -------
+        
         version 0.1.0
-        -------------
+        +++++++++++++
         
         + add a function caluclating a circle's area, using numpy requirements.
         + update requirements.txt and setup.py, README.txt
         + now require: numpy (for new function), setuptools (for setup), jinja2 and mock (for documentation on ReadTheDocs)
         
         version 0.0.5
-        -------------
+        +++++++++++++
         
         + update README.txt with proper instruction
         
         version 0.0.4
-        -------------
+        +++++++++++++
         
         + include file ``requirements.txt`` and ``changes.txt`` into the package
         
         version 0.0.3
-        -------------
+        +++++++++++++
         
         + change ``add`` and ``sub`` into sub-module ``add.py`` and ``sub.py``
         + modify the main ``dummy.py`` accordingly
@@ -81,7 +86,7 @@ Description: ==========================================
         + include the *docs* folder into the package
         
         version 0.0.2
-        -------------
+        +++++++++++++
         
         + remove requirement ``numpy>=1.0.0``
         + include requirement ``jinja2>=2.0.0`` for documentation
