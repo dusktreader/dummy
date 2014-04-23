@@ -24,6 +24,7 @@ Links:
 ------
 
 ReadTheDocs: https://readthedocs.org/projects/dummy/
+GitHub: https://github.com/hn269/dummy/
 
 Quickstart:
 -----------

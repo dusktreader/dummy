@@ -6,7 +6,10 @@
 Welcome to dummy's documentation!
 =================================
 
+.. include:: README.txt
+
 Contents:
+---------
 
 .. toctree::
    :maxdepth: 4
