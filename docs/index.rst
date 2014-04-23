@@ -6,9 +6,13 @@
 Welcome to dummy's documentation!
 =================================
 
+.. image:: Dummy_icon.png
+	:height: 100px
+	:alt: logo
+	:align: center
+
 .. include:: README.txt
 
-.. image:: Dummy_icon.png
 
 Contents:
 ---------
