@@ -8,6 +8,8 @@ Welcome to dummy's documentation!
 
 .. include:: README.txt
 
+.. image:: Dummy_icon.png
+
 Contents:
 ---------
 
