@@ -23,7 +23,12 @@ setup(
     },
     include_package_data=True,
     packages=find_packages(),
-    data_files=[('icons', ['icons/*'])],
+    data_files=[
+        ('icons', [
+            'docs/_static/Dummy.ico',
+            'docs/_static/Dummy.png',
+        ])
+    ],
     classifiers=[
         'Programming Language :: Python',
         'Natural Language :: English',
