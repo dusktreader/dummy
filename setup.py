@@ -19,6 +19,7 @@ setup(
         'dev': [
             'pytest-capturelog',
             'pytest',
+            'flake8',
         ],
     },
     include_package_data=True,
