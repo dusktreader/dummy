@@ -1,25 +1,27 @@
-# ! /usr/bin/env python
-# \Dropbox\Reasearch_Nguyen\Dummy\tests
-# Hoang Long Nguyen (hn269@cornell.edu)
-# 2014/03/28
-#
-# 
+import pytest
 
-#def dummy(n1,n2):
-#    dummy = n1+n2
-#    return dummy
+from dummy import calc, add, sub, mul
 
-from dummy import calc
 
 def test_add():
-    n1 = calc(1,'+',2)
-    assert n1 == 3
-    
+    assert add(1, 2) == 3
+
+
 def test_sub():
-    n1 = calc(3,'-',5)
-    assert n1 == -2
-    
+    assert sub(3, 5) == -2
+
+
 def test_mul():
-    n1 = calc(3,'x',7)
-    assert n1 == 21
-    
+    assert mul(3, 7) == 21
+
+
+def test_calc():
+    assert calc(1, '+', 2) == 3
+    assert calc(3, '-', 5) == -2
+    assert calc(3, 'x', 7) == 21
+    assert calc(3, '.', 7) == 21
+    assert calc(3, '*', 7) == 21
+
+    with pytest.raises(Exception) as err_info:
+        calc(3, '/', 7)
+    assert 'dummy does not support this operation' in str(err_info.value)

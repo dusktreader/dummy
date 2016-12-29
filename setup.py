@@ -1,66 +1,33 @@
-#! /usr/bin/env python
+import glob
+import json
 
-from __future__ import print_function
 from setuptools import setup, find_packages
-from setuptools.command.test import test as TestCommand
-import io
-import os
-import sys
-import py2exe
-import dummy
 
-here = os.path.abspath(os.path.dirname(__file__))
-
-def read(*filenames, **kwargs):
-    encoding = kwargs.get('encoding', 'utf-8')
-    sep = kwargs.get('sep', '\n')
-    buf = []
-    for filename in filenames:
-        with io.open(filename, encoding=encoding) as f:
-            buf.append(f.read())
-    return sep.join(buf)
-
-long_description = read('README.txt','requirements.txt','changes.txt',)
-
-class PyTest(TestCommand):
-    def finalize_options(self):
-        TestCommand.finalize_options(self)
-        self.test_args = []
-        self.test_suite = True
-
-    def run_tests(self):
-        import pytest
-        errcode = pytest.main(self.test_args)
-        sys.exit(errcode)
+with open('.project_metadata.json') as meta_file:
+    project_metadata = json.loads(meta_file.read())
 
 
 setup(
-    name='dummy',
-    version=dummy.__version__,
-    url='http://github.com/hn269/dummy/',
-    license='Cornell University',
-    author='Hoang Long Nguyen',
-    tests_require=['pytest',],
-    install_requires=['jinja2>=2.0.0','numpy>=1.0.0','mock>=1.0.0',],
-    cmdclass={'test': PyTest,},
-    author_email='hn269@cornell.com',
-    description='Dummy package adding, subtracting or multiplying two numbers - to try releasing a Python package',
-    long_description=long_description,
-    packages=['dummy',],
-    data_files=[('',['requirements.txt','changes.txt']),
-        ('icons',['icons\Dummy_icon.ico']),('dummy',['dummy\Dummy_icon.png']),],
+    name=project_metadata['name'],
+    version=project_metadata['release'],
+    author=project_metadata['author'],
+    author_email=project_metadata['author_email'],
+    description=project_metadata['description'],
+    license=project_metadata['license'],
+    install_requires=[],
+    extras_require={
+        'dev': [
+            'pytest-capturelog',
+            'pytest',
+        ],
+    },
     include_package_data=True,
-    platforms='any',
-    test_suite='dummy.test.test_dummy',
-    classifiers = [
+    packages=find_packages(),
+    data_files=[('icons', ['icons/*'])],
+    classifiers=[
         'Programming Language :: Python',
         'Natural Language :: English',
-        'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        ],
-    extras_require={
-        'testing': ['pytest'],
-    },
-    console=[{'script':'dummy\dummy.py','icon_resources':[(1,'icons\Dummy_icon3.ico')],}]
-    #zip_safe = True,
+    ],
+    scripts=glob.glob('bin/*'),
 )
